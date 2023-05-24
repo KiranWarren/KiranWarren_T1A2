@@ -42,6 +42,11 @@ p {
   margin-right: 10px;
 }
 
+.about-img img {
+  width: calc(50% - 20px);
+  margin: 5px auto 5px auto;
+}
+
 /* Buttons */
 nav {
   display: flex;
@@ -119,4 +124,50 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* About Page */
+.about-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: min(1000px, 90%);
+  justify-content: space-around;
+  margin: 24px auto 24px auto;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #616D8E;
+  width: calc(50% - 20px);
+  border: #272727 solid 2px;
+  margin: 5px;
+}
+
+.about-text {
+  background-color: #616D8E;
+  width: calc(50% - 20px);
+  border: #272727 solid 2px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-text h2 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.about-text p {
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+figcaption {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

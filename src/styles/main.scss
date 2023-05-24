@@ -46,6 +46,11 @@ p {
     width: 36px;
     margin-right: 10px;
 }
+.about-img img {
+    width: calc(50% - 20px);
+    margin: 5px auto 5px auto;
+
+}
 
 
 /* Buttons */
@@ -124,10 +129,57 @@ footer {
         @extend .home-name;
     }
 }
-
 .home-container {
     min-height: 100vh;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/* About Page */
+.about-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: min(1000px,90%);
+    justify-content: space-around;
+    margin: 24px auto 24px auto;
+    //background-color: $secondary-color;
+    //border: $primary-color solid 2px;
+}
+
+.about-img {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $secondary-color;
+    width: calc(50% - 20px);
+    border: $primary-color solid 2px;
+    margin: 5px;
+}
+.about-text {
+    background-color: $secondary-color;
+    width: calc(50% - 20px);
+    border: $primary-color solid 2px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        text-align: center;
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+
+    p {
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom:10px;
+    }
+}
+figcaption {
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:10px;
 }
