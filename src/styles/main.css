@@ -35,6 +35,12 @@ p {
 .logo {
   width: 60px;
   margin: 10px;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.logo:hover {
+  box-shadow: inset 0 0 15px #DF5CE4, 0 0 25px #DF5CE4;
 }
 
 .social-link img {
@@ -118,6 +124,7 @@ footer {
   padding: 20px 0;
   margin-bottom: 10px;
   border: #272727 solid 2px;
+  border-radius: 5px;
 }
 .home-container {
   min-height: 100vh;
@@ -130,7 +137,7 @@ footer {
 .about-items {
   display: flex;
   flex-wrap: wrap;
-  width: min(1000px, 90%);
+  width: min(1020px, 90% + 20px);
   justify-content: space-around;
   margin: 24px auto 24px auto;
 }
@@ -142,17 +149,26 @@ footer {
   background-color: #616D8E;
   width: calc(50% - 20px);
   border: #272727 solid 2px;
-  margin: 5px;
+  border-radius: 5px;
+  margin: 5px 0 5px 0;
+  transition: 0.5s;
+}
+
+.about-img:hover {
+  box-shadow: inset 0 0 15px #4FDFFF, 0 0 25px #4FDFFF;
+  border-color: #4FDFFF;
 }
 
 .about-text {
   background-color: #616D8E;
   width: calc(50% - 20px);
   border: #272727 solid 2px;
-  margin: 5px;
+  border-radius: 5px;
+  margin: 5px 0 5px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 0.5s;
 }
 .about-text h2 {
   text-align: center;
@@ -164,6 +180,11 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 10px;
+}
+
+.about-text:hover {
+  box-shadow: inset 0 0 15px #DF5CE4, 0 0 25px #DF5CE4;
+  border-color: #DF5CE4;
 }
 
 figcaption {
