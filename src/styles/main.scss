@@ -7,6 +7,37 @@
 }
 
 
+/* Sass mixins */
+@mixin box-settings {
+    background-color: $secondary-color;
+    border: $primary-color solid 2px;
+    border-radius: 5px;
+}
+
+
+/* Animations */
+@keyframes logo-shake {
+    0% {
+        transform: scale(1.1) translate(0px, 0px);
+    }
+    20% {
+        transform: scale(1.1) translate(5px, 2px);
+    }
+    40% {
+        transform: scale(1.1) translate(-2px, 3px);
+    }
+    60% {
+        transform: scale(1.1) translate(1px, -4px);
+    }
+    80% {
+        transform: scale(1.1) translate(3px, -1px);
+    }
+    100% {
+        transform: scale(1.1) translate(0px, 0px);
+    }
+}
+
+
 /* Background Image */
 body {
     background-image: url(/assets/retro-future-bg.jpg);
@@ -56,6 +87,10 @@ p {
     width: calc(50% - 20px);
     margin: 5px auto 5px auto;
 }
+.project-details img {
+    width: calc(50% - 20px);
+    margin: 5px auto 5px auto;
+}
 .skills-logos img {
     width: 48px;
 }
@@ -90,31 +125,28 @@ nav {
 }
 
 
-
 /* Headers */
 .typ-header {
+    @include box-settings();
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $secondary-color;
     width: min(1000px,90%);
     margin: 10px auto;
-    border: $primary-color solid 2px;
-    border-radius: 5px;
 }
+
 
 /* Footers */
 footer {
+    @include box-settings();
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $secondary-color;
     width: min(1000px,90%);
     margin: 10px auto;
-    border: $primary-color solid 2px;
-    border-radius: 5px;
     padding: 5px;
 }
+
 
 /* Home Page */
 .splash {
@@ -125,14 +157,12 @@ footer {
     justify-content: center;
 
     .home-name {
+        @include box-settings();
         text-align: center;
-        background-color: $secondary-color;
         color:$primary-color;
         font-size:3em;
         padding:20px 0;
         margin-bottom: 10px;
-        border: $primary-color solid 2px;
-        border-radius: 5px;
     }
     .home-text {
         @extend .home-name;
@@ -145,6 +175,7 @@ footer {
     justify-content: space-between;
 }
 
+
 /* About Page */
 .about-items {
     display: flex;
@@ -156,25 +187,22 @@ footer {
 }
 
 .about-img {
+    @include box-settings();
     display:flex;
     justify-content: center;
     flex-direction: column;
-    background-color: $secondary-color;
     width: calc(50% - 20px);
-    border: $primary-color solid 2px;
-    border-radius: 5px;
     margin: 5px 0 5px 0;
     transition:0.5s;
 }
 .about-img:hover {
     box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
     border-color: $tertiary-color;
+    transform: scale(1.33);
 }
 .about-text {
-    background-color: $secondary-color;
+    @include box-settings();
     width: calc(50% - 20px);
-    border: $primary-color solid 2px;
-    border-radius: 5px;
     margin: 5px 0 5px 0;
     display: flex;
     flex-direction: column;
@@ -202,4 +230,116 @@ figcaption {
     text-align: center;
     padding-top:10px;
     padding-bottom:10px;
+}
+
+
+/* Portfolio */
+.resume {
+    @include box-settings();
+    width: min(300px, 90%);
+    margin: 24px auto 12px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .resume-btn {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+.skills{
+    @include box-settings();
+    width: min(800px, 90%);
+    margin: 12px auto 7px auto;
+    display: flex;
+    align-items: center;
+
+    .skills-logos {
+        width: 40%;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin: 10px 30px;
+    }
+
+        .skill-logo:hover {
+            animation-name: logo-shake;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    $project-item-width: calc(90% + 20px);
+    width: min(1020px, $project-item-width);
+    justify-content: space-around;
+    margin: 0px auto 24px auto;
+
+    .project-container {
+        @include box-settings();
+        display:flex;
+        justify-content: center;
+        flex-direction: column;
+        width: calc(50% - 20px);
+        margin: 5px 0 5px 0;
+        transition:0.5s;
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                margin: 5px 0 5px 0;
+            }
+
+            .project-details {
+                display: flex;
+                justify-content: center;
+                margin: 10px;
+
+                p {
+                    padding: 10px;
+                    text-align: justify;
+                }
+            }
+
+            .project-btns {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
+    .project-container:nth-child(1):hover,
+    .project-container:nth-child(4):hover,
+    .project-container:nth-child(5):hover {
+        box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
+        border-color: $tertiary-color;
+        transform: scale(1.33);
+    }
+    .project-container:nth-child(2):hover,
+    .project-container:nth-child(3):hover,
+    .project-container:nth-child(6):hover {
+        box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+        border-color: $accent-color;
+        transform: scale(1.33);
+    }
+
+    .project-container:nth-child(2) .btn:hover,
+    .project-container:nth-child(3) .btn:hover,
+    .project-container:nth-child(6) .btn:hover {
+    box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+    text-shadow: 0 0 10px $accent-color;
+    color: $accent-color;
+    border-color: $accent-color;
+    font-weight: bold;
+    }
+
 }
