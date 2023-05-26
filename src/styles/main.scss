@@ -1,345 +1,383 @@
 /* Defaults */
 * {
-    margin:0;
-    padding:0;
-    border:0;
-    box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
+/* Colours */
+$primary-color: #272727;
+$secondary-color: #616d8e;
+$tertiary-color: #4fdfff;
+$accent-color: #df5ce4;
 
 /* Sass mixins */
 @mixin box-settings {
-    background-color: $secondary-color;
-    border: $primary-color solid 2px;
-    border-radius: 5px;
+  background-color: $secondary-color;
+  border: $primary-color solid 2px;
+  border-radius: 5px;
 }
-
 
 /* Animations */
 @keyframes logo-shake {
-    0% {
-        transform: scale(1.1) translate(0px, 0px);
-    }
-    20% {
-        transform: scale(1.1) translate(5px, 2px);
-    }
-    40% {
-        transform: scale(1.1) translate(-2px, 3px);
-    }
-    60% {
-        transform: scale(1.1) translate(1px, -4px);
-    }
-    80% {
-        transform: scale(1.1) translate(3px, -1px);
-    }
-    100% {
-        transform: scale(1.1) translate(0px, 0px);
-    }
+  0% {
+    transform: scale(1.1) translate(0px, 0px);
+  }
+  20% {
+    transform: scale(1.1) translate(5px, 2px);
+  }
+  40% {
+    transform: scale(1.1) translate(-2px, 3px);
+  }
+  60% {
+    transform: scale(1.1) translate(1px, -4px);
+  }
+  80% {
+    transform: scale(1.1) translate(3px, -1px);
+  }
+  100% {
+    transform: scale(1.1) translate(0px, 0px);
+  }
 }
-
+@keyframes glitch-effect {
+  0% {
+    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color;
+  }
+  12% {
+    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color;
+  }
+  15% {
+    text-shadow: 7px 8px 0 $accent-color, -4px -1px 0 $tertiary-color;
+  }
+  26% {
+    text-shadow: 0px -3px 0 $accent-color, 8px 3px 0 $tertiary-color;
+  }
+  41% {
+    text-shadow: 4px -1px 0 $accent-color, 4px 2px 0 $tertiary-color;
+  }
+  44% {
+    text-shadow: -1px 1px 0 $accent-color, 5px 5px 0 $tertiary-color;
+  }
+  52% {
+    text-shadow: 4px 5px 0 $accent-color, -4px -2px 0 $tertiary-color;
+  }
+  62% {
+    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color;
+  }
+  76% {
+    text-shadow: 1px -4px 0 $accent-color, 3px -2px 0 $tertiary-color;
+  }
+  82% {
+    text-shadow: 4px 2px 0 $accent-color, 1px -4px 0 $tertiary-color;
+  }
+  90% {
+    text-shadow: -1px -3px 0 $accent-color, 4px 2px 0 $tertiary-color;
+  }
+  99% {
+    text-shadow: 1px 3px 0 $accent-color, -5px 2px 0 $tertiary-color;
+  }
+  100% {
+    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color;
+  }
+}
 
 /* Background Image */
 body {
-    background-image: url(/assets/retro-future-bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  background-image: url(/assets/retro-future-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
-
-
-/* Colours */
-$primary-color:#272727;
-$secondary-color:#616D8E;
-$tertiary-color:#4FDFFF;
-$accent-color:#DF5CE4;
-
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;700&display=swap");
 * {
-    font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 h1 {
-    font-size:3rem;
+  font-size: 3rem;
 }
 p {
-    font-size:1rem;
+  font-size: 1rem;
 }
-
 
 /* Images and Logos/Icons */
 .home-logo,
 .logo {
-    width: 60px;
-    margin: 10px;
-    transition: 0.5s;
-    border-radius: 50%;
+  width: 60px;
+  margin: 10px;
+  transition: 0.5s;
+  border-radius: 50%;
 }
 .logo:hover {
-    box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+  box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
 }
 .social-link img {
-    width: 36px;
-    margin-right: 10px;
+  width: 36px;
+  margin-right: 10px;
 }
 .about-img img {
-    width: calc(50% - 20px);
-    margin: 5px auto 5px auto;
+  width: calc(50% - 20px);
+  margin: 5px auto 5px auto;
 }
 .project-details img {
-    width: calc(50% - 20px);
-    margin: 5px auto 5px auto;
+  width: calc(50% - 20px);
+  margin: 5px auto 5px auto;
 }
 .skills-logos img {
-    width: 48px;
+  width: 48px;
 }
-
 
 /* Buttons */
 nav {
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .btn {
-    display:inline-block;
-    background:$secondary-color;
-    color:$primary-color;
-    border: $primary-color solid 2px;
-    text-decoration: none;
-    transition: 0.5s;
-    width: 120px;
-    padding: 5px 0;
-    margin-right: 10px;
-    text-align: center;
-    border-radius: 5px;
+  display: inline-block;
+  background: $secondary-color;
+  color: $primary-color;
+  border: $primary-color solid 2px;
+  text-decoration: none;
+  transition: 0.5s;
+  width: 120px;
+  padding: 5px 0;
+  margin-right: 10px;
+  text-align: center;
+  border-radius: 5px;
 }
 .btn:hover,
 .btn:active {
-    box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
-    text-shadow: 0 0 10px $tertiary-color;
-    color: $tertiary-color;
-    border-color: $tertiary-color;
-    font-weight: bold;
+  box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
+  text-shadow: 0 0 10px $tertiary-color;
+  color: $tertiary-color;
+  border-color: $tertiary-color;
+  font-weight: bold;
 }
-
 
 /* Headers */
 .typ-header {
-    @include box-settings();
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: min(1000px,90%);
-    margin: 10px auto;
+  @include box-settings();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1000px, 90%);
+  margin: 10px auto;
 }
-
 
 /* Footers */
 footer {
-    @include box-settings();
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: min(1000px,90%);
-    margin: 10px auto;
-    padding: 5px;
+  @include box-settings();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(1000px, 90%);
+  margin: 10px auto;
+  padding: 5px;
 }
-
 
 /* Home Page */
 .splash {
-    width:min(600px,90%);
-    margin: 0 auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+  width: min(600px, 90%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    .home-name {
-        @include box-settings();
-        text-align: center;
-        color:$primary-color;
-        font-size:3em;
-        padding:20px 0;
-        margin-bottom: 10px;
+  .home-name h1 {
+    text-align: center;
+    font-size: 72px;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    animation-name: glitch-effect;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  .home-text {
+    @include box-settings();
+    text-align: center;
+    color: $primary-color;
+    font-size: 1em;
+    padding: 20px 0;
+    margin-bottom: 10px;
+
+    h3 {
+      padding-bottom: 10px;
     }
-    .home-text {
-        @extend .home-name;
-    }
+  }
 }
 .home-container {
-    min-height: 100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 /* About Page */
 .about-items {
-    display: flex;
-    flex-wrap: wrap;
-    $about-item-width: calc(90% + 20px);
-    width: min(1020px, $about-item-width);
-    justify-content: space-around;
-    margin: 24px auto 24px auto;
+  display: flex;
+  flex-wrap: wrap;
+  $about-item-width: calc(90% + 20px);
+  width: min(1020px, $about-item-width);
+  justify-content: space-around;
+  margin: 24px auto 24px auto;
 }
 
 .about-img {
-    @include box-settings();
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    width: calc(50% - 20px);
-    margin: 5px 0 5px 0;
-    transition:0.5s;
+  @include box-settings();
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin: 5px 0 5px 0;
+  transition: 0.5s;
 }
 .about-img:hover {
-    box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
-    border-color: $tertiary-color;
-    transform: scale(1.33);
+  box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
+  border-color: $tertiary-color;
+  transform: scale(1.33);
 }
 .about-text {
-    @include box-settings();
-    width: calc(50% - 20px);
-    margin: 5px 0 5px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 0.5s;
+  @include box-settings();
+  width: calc(50% - 20px);
+  margin: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
 
-    h2 {
-        text-align: center;
-        padding-top:5px;
-        padding-bottom:5px;
-    }
+  h2 {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-    p {
-        text-align: justify;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom:10px;
-    }
+  p {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
 }
 .about-text:hover {
-    box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
-    border-color: $accent-color;
+  box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+  border-color: $accent-color;
 }
 figcaption {
-    text-align: center;
-    padding-top:10px;
-    padding-bottom:10px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
 
 /* Portfolio */
 .resume {
-    @include box-settings();
-    width: min(300px, 90%);
-    margin: 24px auto 12px auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  @include box-settings();
+  width: min(300px, 90%);
+  margin: 24px auto 12px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 
-    .resume-btn {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  .resume-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
-.skills{
-    @include box-settings();
-    width: min(800px, 90%);
-    margin: 12px auto 7px auto;
+.skills {
+  @include box-settings();
+  width: min(800px, 90%);
+  margin: 12px auto 7px auto;
+  display: flex;
+  align-items: center;
+
+  .skills-logos {
+    width: 40%;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    .skills-logos {
-        width: 40%;
-        display:flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+  h2 {
+    margin: 10px 30px;
+  }
 
-    h2 {
-        margin: 10px 30px;
-    }
-
-        .skill-logo:hover {
-            animation-name: logo-shake;
-            animation-duration: 0.5s;
-            animation-iteration-count: infinite;
-        }
+  .skill-logo:hover {
+    animation-name: logo-shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
 }
 .projects {
+  display: flex;
+  flex-wrap: wrap;
+  $project-item-width: calc(90% + 20px);
+  width: min(1020px, $project-item-width);
+  justify-content: space-around;
+  margin: 0px auto 24px auto;
+
+  .project-container {
+    @include box-settings();
     display: flex;
-    flex-wrap: wrap;
-    $project-item-width: calc(90% + 20px);
-    width: min(1020px, $project-item-width);
-    justify-content: space-around;
-    margin: 0px auto 24px auto;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    margin: 5px 0 5px 0;
+    transition: 0.5s;
 
-    .project-container {
-        @include box-settings();
-        display:flex;
-        justify-content: center;
-        flex-direction: column;
-        width: calc(50% - 20px);
+    .project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
         margin: 5px 0 5px 0;
-        transition:0.5s;
+      }
 
-        .project {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+      .project-details {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
 
-            h3 {
-                margin: 5px 0 5px 0;
-            }
-
-            .project-details {
-                display: flex;
-                justify-content: center;
-                margin: 10px;
-
-                p {
-                    padding: 10px;
-                    text-align: justify;
-                }
-            }
-
-            .project-btns {
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-
+        p {
+          padding: 10px;
+          text-align: justify;
         }
-    }
-    .project-container:nth-child(1):hover,
-    .project-container:nth-child(4):hover,
-    .project-container:nth-child(5):hover {
-        box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
-        border-color: $tertiary-color;
-        transform: scale(1.33);
-    }
-    .project-container:nth-child(2):hover,
-    .project-container:nth-child(3):hover,
-    .project-container:nth-child(6):hover {
-        box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
-        border-color: $accent-color;
-        transform: scale(1.33);
-    }
+      }
 
-    .project-container:nth-child(2) .btn:hover,
-    .project-container:nth-child(3) .btn:hover,
-    .project-container:nth-child(6) .btn:hover {
+      .project-btns {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .project-container:nth-child(1):hover,
+  .project-container:nth-child(4):hover,
+  .project-container:nth-child(5):hover {
+    box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
+    border-color: $tertiary-color;
+    transform: scale(1.33);
+  }
+  .project-container:nth-child(2):hover,
+  .project-container:nth-child(3):hover,
+  .project-container:nth-child(6):hover {
+    box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+    border-color: $accent-color;
+    transform: scale(1.33);
+  }
+
+  .project-container:nth-child(2) .btn:hover,
+  .project-container:nth-child(3) .btn:hover,
+  .project-container:nth-child(6) .btn:hover {
     box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
     text-shadow: 0 0 10px $accent-color;
     color: $accent-color;
     border-color: $accent-color;
     font-weight: bold;
-    }
-
+  }
 }
