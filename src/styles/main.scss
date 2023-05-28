@@ -42,43 +42,56 @@ $accent-color: #df5ce4;
 }
 @keyframes glitch-effect {
   0% {
-    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color;
+    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   12% {
-    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color;
+    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   15% {
-    text-shadow: 7px 8px 0 $accent-color, -4px -1px 0 $tertiary-color;
+    text-shadow: 7px 8px 0 $accent-color, -4px -1px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   26% {
-    text-shadow: 0px -3px 0 $accent-color, 8px 3px 0 $tertiary-color;
+    text-shadow: 0px -3px 0 $accent-color, 8px 0px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   41% {
-    text-shadow: 4px -1px 0 $accent-color, 4px 2px 0 $tertiary-color;
+    text-shadow: 4px -1px 0 $accent-color, 4px 2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   44% {
-    text-shadow: -1px 1px 0 $accent-color, 5px 5px 0 $tertiary-color;
+    text-shadow: -1px 1px 0 $accent-color, 5px 5px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   52% {
-    text-shadow: 4px 5px 0 $accent-color, -4px -2px 0 $tertiary-color;
+    text-shadow: 4px 5px 0 $accent-color, -4px -2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   62% {
-    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color;
+    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
-  76% {
-    text-shadow: 1px -4px 0 $accent-color, 3px -2px 0 $tertiary-color;
+  63% {
+    text-shadow: 1px -4px 0 $accent-color, 3px -2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   82% {
-    text-shadow: 4px 2px 0 $accent-color, 1px -4px 0 $tertiary-color;
+    text-shadow: 4px 2px 0 $accent-color, 1px -4px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
-  90% {
-    text-shadow: -1px -3px 0 $accent-color, 4px 2px 0 $tertiary-color;
+  85% {
+    text-shadow: -1px -3px 0 $accent-color, 4px 2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   99% {
-    text-shadow: 1px 3px 0 $accent-color, -5px 2px 0 $tertiary-color;
+    text-shadow: 1px 3px 0 $accent-color, -5px 2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
   100% {
-    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color;
+    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color,
+      -1px -1px 1px $primary-color, 1px 1px 1px $primary-color;
   }
 }
 
@@ -119,8 +132,8 @@ p {
   margin-right: 10px;
 }
 .about-img img {
-  width: calc(50% - 20px);
-  margin: 5px auto 5px auto;
+  width: calc(90% - 20px);
+  margin: 10px auto 5px auto;
 }
 .project-details img {
   width: calc(50% - 20px);
@@ -128,6 +141,17 @@ p {
 }
 .skills-logos img {
   width: 48px;
+}
+.blog-card img {
+  width: calc(90% - 10px);
+  margin: 5px auto 5px auto;
+}
+.blog-container img {
+  width: calc(90% - 10px);
+  margin: 5px auto 5px auto;
+}
+.my-details img {
+  width: calc(90% - 10px);
 }
 
 /* Buttons */
@@ -177,6 +201,12 @@ footer {
   width: min(1000px, 90%);
   margin: 10px auto;
   padding: 5px;
+
+  .socials img:hover {
+    animation-name: logo-shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+  }
 }
 
 /* Home Page */
@@ -239,7 +269,6 @@ footer {
 .about-img:hover {
   box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
   border-color: $tertiary-color;
-  transform: scale(1.33);
 }
 .about-text {
   @include box-settings();
@@ -380,4 +409,182 @@ figcaption {
     border-color: $accent-color;
     font-weight: bold;
   }
+}
+
+/* Blog Page */
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  $about-item-width: calc(90% + 20px);
+  width: min(1020px, $about-item-width);
+  justify-content: space-around;
+  margin: 24px auto 24px auto;
+
+  .blog-card:nth-child(odd):hover {
+    box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
+    border-color: $tertiary-color;
+    transform: scale(1.33);
+  }
+  .blog-card:nth-child(even):hover {
+    box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+    border-color: $accent-color;
+    transform: scale(1.33);
+  }
+
+  .blog-card:nth-child(even) .btn:hover {
+    box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+    text-shadow: 0 0 10px $accent-color;
+    color: $accent-color;
+    border-color: $accent-color;
+    font-weight: bold;
+  }
+}
+
+.blog-card {
+  @include box-settings();
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(33% - 20px);
+  margin: 5px 0 5px 0;
+  padding: 10px;
+  transition: 0.5s;
+
+  .blog-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .blog-summary-text {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+
+  .read-blog-btn {
+    margin: 0 auto 10px auto;
+  }
+}
+
+/* Blog entry style template */
+.blog-container {
+  @include box-settings();
+  display: flex;
+  flex-direction: column;
+  width: min(1000px, 90%);
+  margin: 10px auto;
+  padding: 10px;
+
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .blog-content p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .blog-entry-btns {
+    margin: auto;
+  }
+}
+
+/* Contact Me */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  $about-item-width: calc(90% + 20px);
+  width: min(1020px, $about-item-width);
+  justify-content: space-around;
+  margin: 24px auto 24px auto;
+
+  h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.my-details {
+  @include box-settings();
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin: 5px 0 5px 0;
+  transition: 0.5s;
+
+  img {
+    margin: calc(10% / 2 + 5px);
+  }
+}
+.my-details:hover {
+  box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
+  border-color: $tertiary-color;
+}
+.contact-me {
+  @include box-settings();
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  margin: 5px 0 5px 0;
+  transition: 0.5s;
+
+  form {
+    margin: 10px;
+
+    label {
+      display: inline-block;
+      width: 150px;
+      margin: 10px 10px;
+      text-align: right;
+    }
+
+    label[class="msg"] {
+      width: 100%;
+      text-align: center;
+    }
+
+    input {
+      border: $primary-color solid 2px;
+      padding: 5px;
+      transition: 0.5s;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    input[class="msg-box"] {
+      width: 100%;
+      height: 240px;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+      border-color: $accent-color;
+    }
+
+    input[type="submit"] {
+      margin-left: calc(50% - 60px);
+    }
+
+    input[type="submit"]:hover {
+      box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+      text-shadow: 0 0 10px $accent-color;
+      color: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+}
+.contact-me:hover {
+  box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
+  border-color: $accent-color;
 }
