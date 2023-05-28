@@ -32,43 +32,43 @@
 }
 @keyframes glitch-effect {
   0% {
-    text-shadow: 4px 0 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 4px 0 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   12% {
-    text-shadow: -2px 5px 0 #df5ce4, -2px -2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: -2px 5px 0 #df5ce4, -2px -2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   15% {
-    text-shadow: 7px 8px 0 #df5ce4, -4px -1px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 7px 8px 0 #df5ce4, -4px -1px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   26% {
-    text-shadow: 0px -3px 0 #df5ce4, 8px 0px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 0px -3px 0 #df5ce4, 8px 0px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   41% {
-    text-shadow: 4px -1px 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 4px -1px 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   44% {
-    text-shadow: -1px 1px 0 #df5ce4, 5px 5px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: -1px 1px 0 #df5ce4, 5px 5px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   52% {
-    text-shadow: 4px 5px 0 #df5ce4, -4px -2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 4px 5px 0 #df5ce4, -4px -2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   62% {
-    text-shadow: -2px 5px 0 #df5ce4, -2px -2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: -2px 5px 0 #df5ce4, -2px -2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   63% {
-    text-shadow: 1px -4px 0 #df5ce4, 3px -2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 1px -4px 0 #df5ce4, 3px -2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   82% {
-    text-shadow: 4px 2px 0 #df5ce4, 1px -4px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 4px 2px 0 #df5ce4, 1px -4px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   85% {
-    text-shadow: -1px -3px 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: -1px -3px 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   99% {
-    text-shadow: 1px 3px 0 #df5ce4, -5px 2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 1px 3px 0 #df5ce4, -5px 2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
   100% {
-    text-shadow: 4px 0 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 1px #272727, 1px 1px 1px #272727;
+    text-shadow: 4px 0 0 #df5ce4, 4px 2px 0 #4fdfff, -1px -1px 0 #272727, 1px 1px 0 #272727;
   }
 }
 /* Background Image */
@@ -114,6 +114,7 @@ p {
 .about-img img {
   width: calc(90% - 20px);
   margin: 10px auto 5px auto;
+  border: #272727 solid 2px;
 }
 
 .project-details img {
@@ -128,15 +129,18 @@ p {
 .blog-card img {
   width: calc(90% - 10px);
   margin: 5px auto 5px auto;
+  border: #272727 solid 2px;
 }
 
 .blog-container img {
   width: calc(90% - 10px);
   margin: 5px auto 5px auto;
+  border: #272727 solid 2px;
 }
 
 .my-details img {
   width: calc(90% - 10px);
+  border: #272727 solid 2px;
 }
 
 /* Buttons */
