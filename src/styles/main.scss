@@ -5,10 +5,15 @@
   border: 0;
   box-sizing: border-box;
 }
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Colours */
 $primary-color: #272727;
-$secondary-color: #616d8e;
+$secondary-color: #7986ab;
 $tertiary-color: #4fdfff;
 $accent-color: #df5ce4;
 
@@ -40,58 +45,51 @@ $accent-color: #df5ce4;
     transform: scale(1.1) translate(0px, 0px);
   }
 }
+
 @keyframes glitch-effect {
   0% {
-    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      4px 0 0 $accent-color, 4px 2px 0 $tertiary-color;
   }
   12% {
-    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color;
   }
   15% {
-    text-shadow: 7px 8px 0 $accent-color, -4px -1px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
-  }
-  26% {
-    text-shadow: 0px -3px 0 $accent-color, 8px 0px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      7px 8px 0 $accent-color, -4px -1px 0 $tertiary-color;
   }
   41% {
-    text-shadow: 4px -1px 0 $accent-color, 4px 2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      4px -1px 0 $accent-color, 4px 2px 0 $tertiary-color;
   }
   44% {
-    text-shadow: -1px 1px 0 $accent-color, 5px 5px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
-  }
-  52% {
-    text-shadow: 4px 5px 0 $accent-color, -4px -2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      -1px 1px 0 $accent-color, 5px 5px 0 $tertiary-color;
   }
   62% {
-    text-shadow: -2px 5px 0 $accent-color, -2px -2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      -3px 6px 0 $accent-color, -4px -4px 0 $tertiary-color;
   }
   63% {
-    text-shadow: 1px -4px 0 $accent-color, 3px -2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      2px -5px 0 $accent-color, 4px -3px 0 $tertiary-color;
   }
   82% {
-    text-shadow: 4px 2px 0 $accent-color, 1px -4px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      5px 3px 0 $accent-color, 2px -3px 0 $tertiary-color;
   }
   85% {
-    text-shadow: -1px -3px 0 $accent-color, 4px 2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      -2px -4px 0 $accent-color, 5px 3px 0 $tertiary-color;
   }
   99% {
-    text-shadow: 1px 3px 0 $accent-color, -5px 2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      2px 4px 0 $accent-color, -6px 3px 0 $tertiary-color;
   }
   100% {
-    text-shadow: 4px 0 0 $accent-color, 4px 2px 0 $tertiary-color,
-      -1px -1px 0 $primary-color, 1px 1px 0 $primary-color;
+    text-shadow: -1px -1px 0 $primary-color, 1px 1px 0 $primary-color,
+      5px 0 0 $accent-color, 5px 3px 0 $tertiary-color;
   }
 }
 
@@ -139,6 +137,7 @@ p {
 .project-details img {
   width: calc(50% - 20px);
   margin: 5px auto 5px auto;
+  border: $primary-color solid 2px;
 }
 .skills-logos img {
   width: 48px;
@@ -163,6 +162,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 20px;
+  margin: 10px 0 10px 0;
 }
 .btn {
   display: inline-block;
@@ -212,6 +213,9 @@ footer {
     animation-iteration-count: infinite;
   }
 }
+.non-home-footer {
+  margin: auto auto 10px auto;
+}
 
 /* Home Page */
 .splash {
@@ -234,10 +238,9 @@ footer {
   .home-text {
     @include box-settings();
     text-align: center;
-    color: $primary-color;
     font-size: 1em;
     padding: 20px 0;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     h3 {
       padding-bottom: 10px;
@@ -269,6 +272,10 @@ footer {
   width: calc(50% - 20px);
   margin: 5px 0 5px 0;
   transition: 0.5s;
+
+  figcaption {
+    margin: 0 10px 5px 10px;
+  }
 }
 .about-img:hover {
   box-shadow: inset 0 0 15px $tertiary-color, 0 0 25px $tertiary-color;
@@ -309,7 +316,7 @@ figcaption {
 /* Portfolio */
 .resume {
   @include box-settings();
-  width: min(300px, 90%);
+  width: 300px;
   margin: 24px auto 12px auto;
   display: flex;
   justify-content: space-evenly;
@@ -323,7 +330,7 @@ figcaption {
 .skills {
   @include box-settings();
   width: min(800px, 90%);
-  margin: 12px auto 7px auto;
+  margin: 12px auto 12px auto;
   display: flex;
   align-items: center;
 
@@ -360,7 +367,7 @@ figcaption {
     justify-content: center;
     flex-direction: column;
     width: calc(50% - 20px);
-    margin: 5px 0 5px 0;
+    margin: 12px 0 5px 0;
     transition: 0.5s;
 
     .project {
@@ -481,7 +488,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   width: min(1000px, 90%);
-  margin: 10px auto;
+  margin: 24px auto 24px auto;
   padding: 10px;
 
   h2 {
@@ -591,4 +598,94 @@ figcaption {
 .contact-me:hover {
   box-shadow: inset 0 0 15px $accent-color, 0 0 25px $accent-color;
   border-color: $accent-color;
+}
+
+/* Media Queries */
+/* Website has been designed desktop-first approach and displays everything 1000px width and above as intended */
+
+/* Small devices - <400px width */
+@media screen and (max-width: 400px) {
+  .btn {
+    width: 100px;
+  }
+  .typ-header,
+  footer {
+    width: calc(90% + 20px);
+  }
+  /* About Page */
+  .about-items {
+    flex-direction: column;
+  }
+  .about-item:nth-child(1) {
+    order: 1;
+  }
+  .about-item:nth-child(2) {
+    order: 2;
+  }
+  .about-item:nth-child(3) {
+    order: 4;
+  }
+  .about-item:nth-child(4) {
+    order: 3;
+  }
+  .about-item:nth-child(5) {
+    order: 5;
+  }
+  .about-item:nth-child(6) {
+    order: 6;
+  }
+  .about-img,
+  .about-text {
+    width: 100%;
+  }
+
+  /* Portfolio Page */
+  .resume {
+    width: calc(90% + 20px);
+  }
+  .skills {
+    flex-direction: column;
+    width: calc(90% + 20px);
+    .skills-logos {
+      width: 90%;
+    }
+  }
+  .projects {
+    flex-direction: column;
+    .project-container {
+      width: 100%;
+    }
+    .project-details {
+      flex-direction: column;
+      img {
+        width: 90%;
+      }
+    }
+  }
+  /* Blog Page */
+  .blogs {
+    flex-direction: column;
+    .blog-card {
+      width: 100%;
+    }
+  }
+  /* Blog Entry */
+  .blog-container {
+    width: calc(90% + 20px);
+  }
+  /* Contact Page */
+  .contact-container {
+    flex-direction: column;
+    .my-details,
+    .contact-me {
+      width: 100%;
+    }
+  }
+}
+/* Med-Small Devices - 401-600px */
+@media screen and (min-width: 401px) and (max-width: 600px) {
+}
+
+/* Medium Devices - 601-999px */
+@media screen and (min-width: 601px) and (max-width: 999px) {
 }

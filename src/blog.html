@@ -9,170 +9,174 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <!-- Header section to contain logo that links to home page (level 1) and buttons with links to all level 2 pages. -->
-    <!-- Header section identical on all pages except home -->
-    <header class="typ-header">
-      <div class="header-logo">
-        <a href="/index.html"
-          ><img src="/assets/kw-logo.png" alt="KW Logo" class="logo"
-        /></a>
-      </div>
-      <nav>
-        <a href="/about.html" class="btn">ABOUT</a>
-        <a href="/portfolio.html" class="btn">PORTFOLIO</a>
-        <a href="/blog.html" class="btn">BLOG</a>
-        <a href="/contact.html" class="btn">CONTACT</a>
-      </nav>
-    </header>
+    <div class="page-container">
+      <!-- Header section to contain logo that links to home page (level 1) and buttons with links to all level 2 pages. -->
+      <!-- Header section identical on all pages except home -->
+      <header class="typ-header">
+        <div class="header-logo">
+          <a href="/index.html"
+            ><img src="/assets/kw-logo.png" alt="KW Logo" class="logo"
+          /></a>
+        </div>
+        <nav>
+          <a href="/about.html" class="btn">ABOUT</a>
+          <a href="/portfolio.html" class="btn">PORTFOLIO</a>
+          <a href="/blog.html" class="btn">BLOG</a>
+          <a href="/contact.html" class="btn">CONTACT</a>
+        </nav>
+      </header>
 
-    <section class="blogs">
-      <!-- Blog 1 - Neon Button Tutorial -->
-      <div class="blog-card">
-        <!-- Blog image -->
-        <img src="/assets/neon.png" alt="" />
-        <div class="blog-details">
-          <!-- Blog Category -->
-          <p>CSS</p>
-          <!-- Blog Post Date -->
-          <p>28 May 2023</p>
+      <section class="blogs">
+        <!-- Blog 1 - Neon Button Tutorial -->
+        <div class="blog-card">
+          <!-- Blog image -->
+          <img src="/assets/neon.png" alt="" />
+          <div class="blog-details">
+            <!-- Blog Category -->
+            <p>CSS</p>
+            <!-- Blog Post Date -->
+            <p>28 May 2023</p>
+          </div>
+          <!-- Blog Title -->
+          <h3>Neon Button Hover Effect</h3>
+          <!-- Blog Summary -->
+          <p class="blog-summary-text">
+            A neon hover effect on your buttons can add a striking visual to a
+            dark color scheme.
+          </p>
+          <!-- Go to Blog Post -->
+          <div class="read-blog-btn">
+            <a href="/blogs/blog-neon-btn.html" class="btn">READ MORE</a>
+          </div>
         </div>
-        <!-- Blog Title -->
-        <h3>Neon Button Hover Effect</h3>
-        <!-- Blog Summary -->
-        <p class="blog-summary-text">
-          A neon hover effect on your buttons can add a striking visual to a
-          dark color scheme.
-        </p>
-        <!-- Go to Blog Post -->
-        <div class="read-blog-btn">
-          <a href="/blogs/blog-neon-btn.html" class="btn">READ MORE</a>
+        <!-- Blog 2 - Glitch Effect Tutorial -->
+        <div class="blog-card">
+          <!-- Blog image -->
+          <img src="/assets/glitch.png" alt="" />
+          <div class="blog-details">
+            <!-- Blog Category -->
+            <p>CSS</p>
+            <!-- Blog Post Date -->
+            <p>28 May 2023</p>
+          </div>
+          <!-- Blog Title -->
+          <h3>Glitch Animation Effect</h3>
+          <!-- Blog Summary -->
+          <p class="blog-summary-text">
+            We can add a vibrant glitch effect to a header or centrepiece using
+            only CSS animations.
+          </p>
+          <!-- Go to Blog Post -->
+          <div class="read-blog-btn">
+            <a href="/blogs/blog-glitch-effect.html" class="btn">READ MORE</a>
+          </div>
         </div>
-      </div>
-      <!-- Blog 2 - Glitch Effect Tutorial -->
-      <div class="blog-card">
-        <!-- Blog image -->
-        <img src="/assets/glitch.png" alt="" />
-        <div class="blog-details">
-          <!-- Blog Category -->
-          <p>CSS</p>
-          <!-- Blog Post Date -->
-          <p>28 May 2023</p>
+        <!-- Blog 3 - Family Trip to Vvardenfell -->
+        <div class="blog-card">
+          <!-- Blog image -->
+          <img src="/assets/forms.png" alt="" />
+          <div class="blog-details">
+            <!-- Blog Category -->
+            <p>HTML</p>
+            <!-- Blog Post Date -->
+            <p>29 May 2023</p>
+          </div>
+          <!-- Blog Title -->
+          <h3>HTML Forms Tips and Tricks</h3>
+          <!-- Blog Summary -->
+          <p class="blog-summary-text">
+            Need some form inspiration? I give my top tips and tricks to get you
+            excited about HTML forms.
+          </p>
+          <!-- Go to Blog Post -->
+          <div class="read-blog-btn">
+            <a href="/blogs/blog-html-forms-tips.html" class="btn">READ MORE</a>
+          </div>
         </div>
-        <!-- Blog Title -->
-        <h3>Glitch Animation Effect</h3>
-        <!-- Blog Summary -->
-        <p class="blog-summary-text">
-          We can add a vibrant glitch effect to a header or centrepiece using
-          only CSS animations.
-        </p>
-        <!-- Go to Blog Post -->
-        <div class="read-blog-btn">
-          <a href="/blogs/blog-glitch-effect.html" class="btn">READ MORE</a>
+        <!-- Blog 4 - Top 10 Bands -->
+        <div class="blog-card">
+          <!-- Blog image -->
+          <img src="/assets/semantic.png" alt="" />
+          <div class="blog-details">
+            <!-- Blog Category -->
+            <p>HTML</p>
+            <!-- Blog Post Date -->
+            <p>29 May 2023</p>
+          </div>
+          <!-- Blog Title -->
+          <h3>Recommended Semantic Elements</h3>
+          <!-- Blog Summary -->
+          <p class="blog-summary-text">
+            Here are some recommended semantic elements and where to use them,
+            which can help others navigate your page.
+          </p>
+          <!-- Go to Blog Post -->
+          <div class="read-blog-btn">
+            <a href="/blogs/blog-semantic-elements.html" class="btn"
+              >READ MORE</a
+            >
+          </div>
         </div>
-      </div>
-      <!-- Blog 3 - Family Trip to Vvardenfell -->
-      <div class="blog-card">
-        <!-- Blog image -->
-        <img src="/assets/forms.png" alt="" />
-        <div class="blog-details">
-          <!-- Blog Category -->
-          <p>HTML</p>
-          <!-- Blog Post Date -->
-          <p>29 May 2023</p>
+        <!-- Blog 5 - Final Drive Failure Analysis -->
+        <div class="blog-card">
+          <!-- Blog image -->
+          <img src="/assets/colors.png" alt="" />
+          <div class="blog-details">
+            <!-- Blog Category -->
+            <p>CSS</p>
+            <!-- Blog Post Date -->
+            <p>30 May 2023</p>
+          </div>
+          <!-- Blog Title -->
+          <h3>Choosing Color Schemes</h3>
+          <!-- Blog Summary -->
+          <p class="blog-summary-text">
+            Ever struggle to get your colors to pop? Here are some hard and fast
+            rules when selecting a color scheme for your website.
+          </p>
+          <!-- Go to Blog Post -->
+          <div class="read-blog-btn">
+            <a href="/blogs/blog-color-schemes.html" class="btn">READ MORE</a>
+          </div>
         </div>
-        <!-- Blog Title -->
-        <h3>HTML Forms Tips and Tricks</h3>
-        <!-- Blog Summary -->
-        <p class="blog-summary-text">
-          Need some form inspiration? I give my top tips and tricks to get you
-          excited about HTML forms.
-        </p>
-        <!-- Go to Blog Post -->
-        <div class="read-blog-btn">
-          <a href="/blogs/blog-html-forms-tips.html" class="btn">READ MORE</a>
+        <!-- Blog 6 - Tiramisu Recipe -->
+        <div class="blog-card">
+          <!-- Blog image -->
+          <img src="/assets/specificity.png" alt="" />
+          <div class="blog-details">
+            <!-- Blog Category -->
+            <p>CSS</p>
+            <!-- Blog Post Date -->
+            <p>1 June 2023</p>
+          </div>
+          <!-- Blog Title -->
+          <h3>CSS Specificity Explained</h3>
+          <!-- Blog Summary -->
+          <p class="blog-summary-text">
+            Are your CSS properties not seeming to apply where you want? It may
+            be an issue with your selector specificity.
+          </p>
+          <!-- Go to Blog Post -->
+          <div class="read-blog-btn">
+            <a href="/blogs/blog-css-specificity.html" class="btn">READ MORE</a>
+          </div>
         </div>
-      </div>
-      <!-- Blog 4 - Top 10 Bands -->
-      <div class="blog-card">
-        <!-- Blog image -->
-        <img src="/assets/semantic.png" alt="" />
-        <div class="blog-details">
-          <!-- Blog Category -->
-          <p>HTML</p>
-          <!-- Blog Post Date -->
-          <p>29 May 2023</p>
-        </div>
-        <!-- Blog Title -->
-        <h3>Recommended Semantic Elements</h3>
-        <!-- Blog Summary -->
-        <p class="blog-summary-text">
-          Here are some recommended semantic elements and where to use them,
-          which can help others navigate your page.
-        </p>
-        <!-- Go to Blog Post -->
-        <div class="read-blog-btn">
-          <a href="/blogs/blog-semantic-elements.html" class="btn">READ MORE</a>
-        </div>
-      </div>
-      <!-- Blog 5 - Final Drive Failure Analysis -->
-      <div class="blog-card">
-        <!-- Blog image -->
-        <img src="/assets/colors.png" alt="" />
-        <div class="blog-details">
-          <!-- Blog Category -->
-          <p>CSS</p>
-          <!-- Blog Post Date -->
-          <p>30 May 2023</p>
-        </div>
-        <!-- Blog Title -->
-        <h3>Choosing Color Schemes</h3>
-        <!-- Blog Summary -->
-        <p class="blog-summary-text">
-          Ever struggle to get your colors to pop? Here are some hard and fast
-          rules when selecting a color scheme for your website.
-        </p>
-        <!-- Go to Blog Post -->
-        <div class="read-blog-btn">
-          <a href="/blogs/blog-color-schemes.html" class="btn">READ MORE</a>
-        </div>
-      </div>
-      <!-- Blog 6 - Tiramisu Recipe -->
-      <div class="blog-card">
-        <!-- Blog image -->
-        <img src="/assets/specificity.png" alt="" />
-        <div class="blog-details">
-          <!-- Blog Category -->
-          <p>CSS</p>
-          <!-- Blog Post Date -->
-          <p>1 June 2023</p>
-        </div>
-        <!-- Blog Title -->
-        <h3>CSS Specificity Explained</h3>
-        <!-- Blog Summary -->
-        <p class="blog-summary-text">
-          Are your CSS properties not seeming to apply where you want? It may be
-          an issue with your selector specificity.
-        </p>
-        <!-- Go to Blog Post -->
-        <div class="read-blog-btn">
-          <a href="/blogs/blog-css-specificity.html" class="btn">READ MORE</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer section contains name and socials links. Footer same on all pages. -->
-    <footer>
-      <div class="text">Kiran Warren 2023</div>
-      <div class="socials">
-        <a href="https://github.com/KiranWarren" class="social-link"
-          ><img src="/assets/github-logo.png" alt="Github Logo"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/kiran-warren-a43049278/"
-          class="social-link"
-          ><img src="/assets/linkedin-logo.png" alt="LinkedIn Logo"
-        /></a>
-      </div>
-    </footer>
+      <!-- Footer section contains name and socials links. Footer same on all pages. -->
+      <footer class="non-home-footer">
+        <div class="text">Kiran Warren 2023</div>
+        <div class="socials">
+          <a href="https://github.com/KiranWarren" class="social-link"
+            ><img src="/assets/github-logo.png" alt="Github Logo"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/kiran-warren-a43049278/"
+            class="social-link"
+            ><img src="/assets/linkedin-logo.png" alt="LinkedIn Logo"
+          /></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>

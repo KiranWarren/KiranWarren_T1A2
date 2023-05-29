@@ -9,80 +9,82 @@
     <link rel="stylesheet" href="../styles/main.css" />
   </head>
   <body>
-    <!-- Header section to contain logo that links to home page (level 1) and buttons with links to all level 2 pages. -->
-    <!-- Header section identical on all pages except home -->
-    <header class="typ-header">
-      <div class="header-logo">
-        <a href="../index.html"
-          ><img src="../assets/kw-logo.png" alt="KW Logo" class="logo"
-        /></a>
-      </div>
-      <nav>
-        <a href="../about.html" class="btn">ABOUT</a>
-        <a href="../portfolio.html" class="btn">PORTFOLIO</a>
-        <a href="../blog.html" class="btn">BLOG</a>
-        <a href="../contact.html" class="btn">CONTACT</a>
-      </nav>
-    </header>
+    <div class="page-container">
+      <!-- Header section to contain logo that links to home page (level 1) and buttons with links to all level 2 pages. -->
+      <!-- Header section identical on all pages except home -->
+      <header class="typ-header">
+        <div class="header-logo">
+          <a href="../index.html"
+            ><img src="../assets/kw-logo.png" alt="KW Logo" class="logo"
+          /></a>
+        </div>
+        <nav>
+          <a href="../about.html" class="btn">ABOUT</a>
+          <a href="../portfolio.html" class="btn">PORTFOLIO</a>
+          <a href="../blog.html" class="btn">BLOG</a>
+          <a href="../contact.html" class="btn">CONTACT</a>
+        </nav>
+      </header>
 
-    <section class="blog-container">
-      <!-- Date -->
-      <p>30 May 2023</p>
-      <!-- Blog Title -->
-      <h2>Choosing Color Schemes</h2>
-      <!-- Blog Image -->
-      <img src="../assets/colors.png" alt="" />
-      <figcaption>
-        <i>A striking color scheme can capture a users attention.</i>
-      </figcaption>
-      <!-- Blog Content -->
-      <div class="blog-content">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe veniam
-          velit quisquam repellat blanditiis repellendus eius! Aperiam
-          consectetur iste, qui fugit alias nesciunt deleniti, molestiae maiores
-          libero asperiores impedit consequatur! Consequatur sunt, sint nulla a
-          sit voluptatibus beatae inventore recusandae nihil corrupti totam
-          molestiae eum dicta officia dignissimos distinctio.
-        </p>
-        <p>
-          Dolore alias quam necessitatibus ipsum dolores quia possimus
-          exercitationem dolorem ullam. Adipisci quam tempore maiores accusamus
-          dicta, perspiciatis dolore molestiae et nulla eius voluptates ex atque
-          placeat natus aut vero maxime.
-        </p>
-        <p>
-          Quae earum labore nam perferendis quidem reprehenderit quo deserunt
-          cum. Assumenda quaerat alias esse similique cumque dolore explicabo
-          mollitia voluptatum maiores necessitatibus impedit qui commodi,
-          asperiores ut deleniti nostrum, labore nulla quam, ullam in
-          perspiciatis. Veniam maxime alias debitis voluptatem. Reprehenderit
-          quidem accusamus incidunt modi pariatur vel distinctio illum nulla
-          unde laudantium placeat, labore optio, ipsa quod, sapiente commodi
-          omnis natus ratione. Adipisci, aut?
-        </p>
-        <p>Sit atque facere recusandae iste laborum.</p>
-      </div>
-      <!-- Back to Top Btn -->
-      <div class="blog-entry-btns">
-        <a href="" class="btn">BACK TO TOP</a>
-        <a href="../blog.html" class="btn">BLOG LIST</a>
-      </div>
-    </section>
+      <section class="blog-container">
+        <!-- Date -->
+        <p>30 May 2023</p>
+        <!-- Blog Title -->
+        <h2>Choosing Color Schemes</h2>
+        <!-- Blog Image -->
+        <img src="../assets/colors.png" alt="" />
+        <figcaption>
+          <i>A striking color scheme can capture a users attention.</i>
+        </figcaption>
+        <!-- Blog Content -->
+        <div class="blog-content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe
+            veniam velit quisquam repellat blanditiis repellendus eius! Aperiam
+            consectetur iste, qui fugit alias nesciunt deleniti, molestiae
+            maiores libero asperiores impedit consequatur! Consequatur sunt,
+            sint nulla a sit voluptatibus beatae inventore recusandae nihil
+            corrupti totam molestiae eum dicta officia dignissimos distinctio.
+          </p>
+          <p>
+            Dolore alias quam necessitatibus ipsum dolores quia possimus
+            exercitationem dolorem ullam. Adipisci quam tempore maiores
+            accusamus dicta, perspiciatis dolore molestiae et nulla eius
+            voluptates ex atque placeat natus aut vero maxime.
+          </p>
+          <p>
+            Quae earum labore nam perferendis quidem reprehenderit quo deserunt
+            cum. Assumenda quaerat alias esse similique cumque dolore explicabo
+            mollitia voluptatum maiores necessitatibus impedit qui commodi,
+            asperiores ut deleniti nostrum, labore nulla quam, ullam in
+            perspiciatis. Veniam maxime alias debitis voluptatem. Reprehenderit
+            quidem accusamus incidunt modi pariatur vel distinctio illum nulla
+            unde laudantium placeat, labore optio, ipsa quod, sapiente commodi
+            omnis natus ratione. Adipisci, aut?
+          </p>
+          <p>Sit atque facere recusandae iste laborum.</p>
+        </div>
+        <!-- Back to Top Btn -->
+        <div class="blog-entry-btns">
+          <a href="" class="btn">BACK TO TOP</a>
+          <a href="../blog.html" class="btn">BLOG LIST</a>
+        </div>
+      </section>
 
-    <!-- Footer section contains name and socials links. Footer same on all pages. -->
-    <footer>
-      <div class="text">Kiran Warren 2023</div>
-      <div class="socials">
-        <a href="https://github.com/KiranWarren" class="social-link"
-          ><img src="/assets/github-logo.png" alt="Github Logo"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/kiran-warren-a43049278/"
-          class="social-link"
-          ><img src="/assets/linkedin-logo.png" alt="LinkedIn Logo"
-        /></a>
-      </div>
-    </footer>
+      <!-- Footer section contains name and socials links. Footer same on all pages. -->
+      <footer class="non-home-footer">
+        <div class="text">Kiran Warren 2023</div>
+        <div class="socials">
+          <a href="https://github.com/KiranWarren" class="social-link"
+            ><img src="/assets/github-logo.png" alt="Github Logo"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/kiran-warren-a43049278/"
+            class="social-link"
+            ><img src="/assets/linkedin-logo.png" alt="LinkedIn Logo"
+          /></a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
