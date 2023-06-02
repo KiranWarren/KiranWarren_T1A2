@@ -120,3 +120,43 @@ The project list shows a diverse range of interests and skills which should be a
 ### References
 
 Images used in the project that were retrieved from the internet:
+
+- _retro-future-bg.jpg_, image, PXFuel, viewed 2 June 2023, <https://www.pxfuel.com/en/desktop-wallpaper-iayeu >.
+
+- _github-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/github-logo_25231 >.
+
+- _kw-logo-solid.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/kw_10041034 >.
+
+- _kw-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/kw_10041027 >.
+
+- _linkedin-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/linkedin_3536569?term=linked+in&amp;page=1&amp;position=2&amp;origin=search&amp;related_id=3536569 >.
+
+- _html5-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/html-5_174854 >.
+
+- _css3-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/css-3_732190 >.
+
+- _js-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/js_5968292 >.
+
+- _sass-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/sass_5968358 >.
+
+- _python-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/python_5968350 >.
+
+- _react-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/react_919851 >.
+
+- _postgre-logo.png_, image, Flaticon, viewed 2 June 2023, <https://www.flaticon.com/free-icon/postgre_5968342 >.
+
+- _drumkit-project.png_, image, Vecteezy, viewed 2 June 2023, <https://www.vecteezy.com/vector-art/15391577-drum-set-icon-cartoon-style >.
+
+- _weather-project.png_, image, Freepik, viewed 2 June 2023, <https://www.vecteezy.com/vector-art/15391577-drum-set-icon-cartoon-style >.
+
+- _8ball-project.png_, image, Harvey Norman, viewed 2 June 2023, <https://www.harveynorman.com.au/mattel-magic-8-ball-fortune-telling-fun-ma30188.html >.
+
+- _survey-project.png_, image, Canva, viewed 2 June 2023, <https://www.canva.com/templates/s/survey/ >.
+
+- _car-share-project.png_, image, Vox, viewed 2 June 2023, <https://www.vox.com/2016/7/28/12294214/shared-vehicles-livable-cities >.
+
+- _parallax-project.png_, image, Unsplash, viewed 2 June 2023, <https://unsplash.com/s/photos/beautiful-landscape >.
+
+- _colors.png_, image, Wikipedia, viewed 2 June 2023, <https://en.wikipedia.org/wiki/Paint#/media/File:Multicolored_tempera_paints.jpg >.
+
+- _map.png_, image, Google Maps, viewed 2 June 2023, <https://www.google.com/maps >.
