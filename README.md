@@ -12,7 +12,7 @@
 
 ## Link to presentation video:
 
-[]()
+[KiranWarren T1A2 Presentation](https://youtu.be/sgFK6YauYKo)
 
 ## Description of portfolio website:
 
@@ -55,11 +55,11 @@ attention of visitors.
 
   The feature on the right of the page is a "contact me" box containing a form that allows the user to send me a message via email. Not currently functioning, requires a php script to process the information passed from the form.
 
-- Aesthetic - The colour scheme and style chosen for all pages is a cyberpunk aesthetic. This features a static background image of a nighttime cityscape with neon pink and blues. The colour scheme chosen for the page follows the same style, using grey and dark grey as the main colours and bright pink and blue as accenting colours. This is an aesthetic that I personally enjoy and feel that it reflects the playfulness of my personality.
+- Aesthetic: The colour scheme and style chosen for all pages is a cyberpunk aesthetic. This features a static background image of a nighttime cityscape with neon pink and blues. The colour scheme chosen for the page follows the same style, using grey and dark grey as the main colours and bright pink and blue as accenting colours. This is an aesthetic that I personally enjoy and feel that it reflects the playfulness of my personality.
 
   All text is a dark colour, presented on a lighter colour, ensuring easy readability for the user. Borders of features glow with accent colours when hovered over with the mouse, to give character to the page and show focus on the element.
 
-- Responsiveness - The website was designed with a desktop-first approach. I found it easier to envisage the site on a desktop as opposed to a mobile phone. To allow the page to display properly for mobile or tablet user, three media query breakpoints were added.
+- Responsivenes: The website was designed with a desktop-first approach. I found it easier to envisage the site on a desktop as opposed to a mobile phone. To allow the page to display properly for mobile or tablet user, three media query breakpoints were added.
 
   The webpage displays as intended for screen widths larger than 1000px.
 
@@ -69,7 +69,11 @@ attention of visitors.
 
   The last breakpoint is for screens with a width below 400px. The max width of features is removed at this level, and is based on the width of the screen only.
 
-- Navigation - A navbar with all second level pages has been provided on all pages. All pages (except for home page) display a consistent navbar within the header. The KW logo in the header will also take the user back to the home page. The navigation buttons have a neon glow effect when hovered with the cursor.
+- Accessibility: The use of semantic elements was used throughout the code. This will help other developers a much clearer idea of how the code is structured. It will also aid users who are using screenreaders understand the purpose of each element.
+
+  The text used throughout the website is black on a light grey background (excepting the animated centrepiece on the home page). This will ensure good readability of the text throughout the website.
+
+- Navigation: A navbar with all second level pages has been provided on all pages. All pages (except for home page) display a consistent navbar within the header. The KW logo in the header will also take the user back to the home page. The navigation buttons have a neon glow effect when hovered with the cursor.
 
   The home page has the navigation buttons brought to the centre of the screen as this page was designed to draw the users attention to the centre.
 
@@ -116,6 +120,8 @@ The project list shows a diverse range of interests and skills which should be a
 - The style sheet was written in SCSS using a Live SASS Compiler that compiled the style sheet to CSS.
 - The project was pushed to a Github repository.
 - The website was published to the internet using Netlify.
+- The presentation was recorded using a screen recorder Chrome extension called "Scre.io".
+- The presentation .webm file was uploaded to Youtube.com as an unlisted video.
 
 ### References
 
