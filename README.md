@@ -12,7 +12,7 @@
 
 ## Link to presentation video:
 
-[KiranWarren T1A2 Presentation](https://youtu.be/R23inRei4oQ)
+[KiranWarren T1A2 Presentation](https://youtu.be/pkXkiWm0734)
 
 ## Description of portfolio website:
 
